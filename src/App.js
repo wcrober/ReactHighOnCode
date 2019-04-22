@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Header} from './Components/Header';
+import Article from './Components/Article';
+import ArticleTwo from './Components/ArticleTwo';
+import CurrentNews from './Components/CurrentNews';
 
 class App extends Component {
+
+  constructor() {
+    super()
+    this.topics = ["HighOn", "Coding", "Home", "Categories"]
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <Header headItems = {this.topics}/>
+      <CurrentNews></CurrentNews>
+      <Article></Article>
+      <ArticleTwo></ArticleTwo>
+        
       </div>
     );
   }

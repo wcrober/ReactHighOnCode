@@ -1,0 +1,15 @@
+.article {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    
+  }
+
+  .commentslikes {
+      background-color: orange;
+      color: white;
+  }
+
+  .articletitle{
+    color: #72a4e4; 
+  }
